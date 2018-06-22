@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        <%= title %>
+    </title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+</head>
+
+<body>
+    <div id="processes">
+        <% processList.forEach(function(process) { %>
+            <div class="process">
+                <h2>
+                    <%=process.command%>
+                </h2>
+                <h3>
+                    <%=process.pid%>
+                </h3>
+            </div>
+            <% }) %>
+    </div>
+</body>
+
+</html>
